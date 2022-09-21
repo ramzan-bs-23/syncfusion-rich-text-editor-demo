@@ -1,2 +1,16 @@
-<ejs-richtexteditor>
-</ejs-richtexteditor>
+<div style="margin: 0 auto;">
+  <ejs-richtexteditor #editor [height]="500" [toolbarSettings]="config.tools" [autoSaveOnIdle]="config.autoSave"
+    [saveInterval]="config.saveIntervalInMillisecond" [insertImageSettings]="config.image" (change)="onChanges()"
+    (imageSelected)="onImageSelected($event)" (beforeImageUpload)="onBeforeImageUpload($event)"
+    (imageUploading)="onImageUploading($event)" (imageUploadSuccess)="onImageUploadSuccess($event)">
+  </ejs-richtexteditor>
+  <br>
+  <div>
+    <div id="saving" style="display: none">
+      <p>Saving changes...</p>
+    </div>
+    <div id="saved" style="display: none">
+      <p>Changes saved ✔️</p>
+    </div>
+  </div>
+</div>

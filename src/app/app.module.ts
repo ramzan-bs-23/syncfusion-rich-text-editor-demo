@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HtmlEditorService, ImageService, LinkService, RichTextEditorModule, ToolbarService } from '@syncfusion/ej2-angular-richtexteditor';
+import { FileManagerService, HtmlEditorService, ImageService, LinkService, QuickToolbarService, RichTextEditorModule, ToolbarService } from '@syncfusion/ej2-angular-richtexteditor';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     RichTextEditorModule
   ],
-  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService],
+  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, FileManagerService, QuickToolbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

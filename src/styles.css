@@ -8,3 +8,7 @@
 @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind-dark.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/tailwind-dark.css';
 @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind-dark.css';
+
+@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind-dark.css";
+@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind-dark.css";
+@import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind-dark.css";
